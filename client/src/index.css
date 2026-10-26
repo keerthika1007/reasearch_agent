@@ -1,0 +1,45 @@
+:root {
+  --ink: #1c1915;
+  --muted: #5c574e;
+  --paper: #f6f1e7;
+  --card: #fffdf8;
+  --line: #e4d9c5;
+  --pine: #215c4a;
+  --pine-dark: #163d32;
+  --clay: #b42318;
+  --clay-bg: #fdecea;
+  --gold: #c4a35a;
+  --sans: "Segoe UI", "Trebuchet MS", system-ui, sans-serif;
+  --mono: ui-monospace, "Cascadia Code", Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--sans);
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, #efe4c8 0, transparent 42%),
+    linear-gradient(180deg, var(--paper), #efe8d8);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+a {
+  color: var(--pine);
+}

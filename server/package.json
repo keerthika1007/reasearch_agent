@@ -1,0 +1,16 @@
+{
+  "name": "firstpr-ai-server",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "check": "node --check src/index.js && node --check src/github.js && node --check src/ollama.js && node --check src/parseRepoUrl.js && node src/parseRepoUrl.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0"
+  }
+}
